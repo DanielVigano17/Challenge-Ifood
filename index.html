@@ -24,9 +24,10 @@
                     <li><a href="#">Sobre o Ifood</a></li>
                     <li><a href="#">Como funciona</a></li>
                     <li><a href="#">Ajuda</a></li>
-                    <li><a href="#"><button>Login</button></a></li>
                 </ul>
+                <a href="#"><button class="login">Login</button></a>
             </nav>
+            
 
 
         </div>
@@ -42,25 +43,48 @@
         </div>
 
         <div class="crud">
-            <h1>Cadastre sua conta de parceiro <Strong>Ifood</Strong>!</h1>
+            <h1>Cadastre sua conta de parceiro <Strong class="forte">Ifood!</Strong></h1>
 
             <form action="">
 
-                <div>
-                    <p>
-                        Nome completo
-                        <input type="text" id="itemInput" placeholder="Digite um item" required>
+                <div class="formulario">
+
+                    <div class="labels">
+                        <p><strong>Nome completo</strong></p>
+                        <input type="text" name="" id="">
+                    </div>
+
+
+                    <div class="labels">
+                        <p><strong>E-mail</strong></p>
+                        <input type="text" name="" id="">
+                    </div>
+
+
+                    <div class="labels">
+                        <p><strong>Celular ( com DDD )</strong></p>
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <button class="cadastrar">Cadastrar</button>
+
+                    <p><strong>Ou</strong></p>
+
+
+                    <button class="facebook">
+                        <img class="face-logo" src="imagens/logo-facebook.png" alt="logo do facebook">
+                        <p class="p1">Login com Facebook</p>
+                        <p></p>
+                    </button>
+
+                    <p class="rodape-crud">
+                        <strong>
+                            Ao continuar, você concorda em receber comunicações do iFood.
+                            Confira nossa
+                            <a class="declaracao-privacidade" href="#">Declaração de Privacidade</a>
+                        </strong>
                     </p>
 
-                    <p>
-                        Email
-                        <input type="text" id="itemInput" placeholder="Digite um item" required>
-                    </p>
-
-                    <p>
-                        Celular (com DDD)
-                        <input type="text" id="itemInput" placeholder="Digite um item" required>
-                    </p>
                 </div>
 
             </form>
