@@ -1,0 +1,12 @@
+:root
+{
+    --primary-red : #F3BEBE;
+    --secundary-red : #E32D38;
+    --primary-white : #FFFFFF;
+}
+
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    text-decoration: none;
+}

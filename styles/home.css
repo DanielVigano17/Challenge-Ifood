@@ -1,0 +1,35 @@
+#main-content
+{
+    height: 100%;
+}
+#div-content-main
+{
+    min-height: 100vh;
+}
+#sidebar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-red);
+    box-shadow: 14px 4px 23.9px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+}
+#logo-img
+{
+    max-width: 7.5rem;
+}
+
+.navlink
+{
+    color: var(--secundary-red);
+    color: #E32D38;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#header-main
+{
+    height: 90px;
+}
+
