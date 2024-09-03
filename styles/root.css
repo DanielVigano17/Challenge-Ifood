@@ -2,11 +2,14 @@
 {
     --primary-red : #F3BEBE;
     --secundary-red : #E32D38;
+    --terciary-red : #fa9a9a;
     --primary-white : #FFFFFF;
+    
 }
 
 *{
     padding: 0 !important;
     margin: 0 !important;
     text-decoration: none;
+    list-style: none;
 }

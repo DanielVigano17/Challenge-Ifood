@@ -13,19 +13,49 @@
     align-items: center;
     background-color: var(--primary-red);
     box-shadow: 14px 4px 23.9px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 360px !important;
 }
 #logo-img
 {
     max-width: 7.5rem;
 }
 
+#nav-content
+{
+    max-width: 100%;
+    width: 100%;
+}
 .navlink
 {
+    display: flex;
+    align-items: center;
     color: var(--secundary-red);
-    color: #E32D38;
     font-size: 1.5rem;
     font-weight: 700;
+    max-width: 90%;
+    height: 52px;
+    padding-left: 40px !important;
+    border-radius: 6px;
+    margin-top: 24px !important;
+    cursor: pointer;
+}
+
+.navlink:hover 
+{
+    background-color: var(--terciary-red);
+}
+
+.navlink img
+{
+    margin-right: 20px !important;
+}
+
+.active-link
+{
+    background-color: var(--terciary-red);
+    border-right: 5px solid var(--secundary-red);
 }
 
 #header-main
