@@ -5,6 +5,7 @@
 #div-content-main
 {
     min-height: 100vh;
+
 }
 #sidebar
 {
@@ -65,14 +66,31 @@
     padding-right: 32px !important;
     padding-bottom: 32px !important;
     margin-left: 365px !important;
+    height: 100%;
+}
+
+#content-right
+{
+    display: flex;
+    height: 100%;
 }
 
 #grid-right-content
 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-columns: repeat(2, 1fr); /* 4 colunas */
     grid-template-rows: 1fr 2fr; /* Linhas automáticas */
     gap: 20px;
+    width: 60%;
+    padding-right: 20px !important;
+}
+
+#grid-left-content
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 40%;
 }
 
 .outline-card
@@ -165,6 +183,16 @@
     font-size: 48px;
     font-weight: 700;
     margin-top: 24px !important;
+}
+
+#melhores-produtos
+{
+    height: 40%;
+}
+
+#unidades-marca
+{
+    height: 60%;
 }
 
 
