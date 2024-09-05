@@ -63,6 +63,7 @@
 #right-content
 {
     padding-right: 32px !important;
+    padding-bottom: 32px !important;
     margin-left: 365px !important;
 }
 
@@ -70,35 +71,19 @@
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 colunas */
-    grid-template-rows: 1fr 1fr; /* Linhas automáticas */
+    grid-template-rows: 1fr 2fr; /* Linhas automáticas */
     gap: 20px;
 }
 
-.melhores-produtos
+.outline-card
 {
+    padding-inline: 12px !important;
+    padding-top: 24px !important;
     grid-column: span 2;
     border-radius: 24px;
     border: 3px solid #E9E9E9;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.unidades
-{
-    grid-column: span 2;
-    border-radius: 24px;
-    border: 3px solid #E9E9E9;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.grafico
-{
-    grid-column: span 2;
-    border-radius: 24px;
-    border: 3px solid #E9E9E9;
-    background: #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
 
 #header-main
@@ -145,6 +130,8 @@
 
 .card-cinza
 {
+    padding-inline: 16px !important;
+    padding-top: 28px !important;
     height: 270px;
     border-radius: 24px;
     background: linear-gradient(92deg, #F3F3F3 1.36%, #E9E9E9 99.87%);
@@ -155,6 +142,29 @@
 {
     padding-inline: 10px !important;
     margin-bottom: 20px !important;
+}
+
+.header-card
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-card p 
+{
+    color: #726E6E;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.value-card
+{
+    display: block;
+    color: #000;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 24px !important;
 }
 
 
