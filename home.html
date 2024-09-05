@@ -12,35 +12,42 @@
 </head>
 <body>
     <main class="conteiner-fluid" id="main-content">
-        <div class="row" id="div-content-main">
+        <sidebar id="sidebar">
+            <img src="imagens/logo_Ifood.svg" id="logo-img" alt="">
 
-            <sidebar class="col-3" id="sidebar">
-                <img src="imagens/logo_Ifood.svg" id="logo-img" alt="">
+            <nav id="nav-content">
+                <ul>
+                    <li class="navlink active-link">
+                        <img src="imagens/Home-icon.svg" alt="">
+                        Home
+                    </li>
+                    <li class="navlink">
+                        <img src="imagens/Money-Bag-icon.svg" alt="">
+                        Extrato
+                    </li>
+                    <li class="navlink">
+                        <img src="imagens/Split-Money-icon.svg" alt="">
+                        Meus Gastos
+                    </li>
+                    <li class="navlink" >
+                        <img src="imagens/compass-icon.svg" alt="">
+                        Produtos e Unidades
+                    </li>
+                    <li class="navlink" >
+                        <img src="imagens/Cadeado-icon.svg" alt="">
+                        Grupos e Segurança
+                    </li>
+                    <li class="navlink">
+                        <img src="imagens/Grafico-icon.svg" alt="">
+                        Dashboard Financeiro
+                    </li>
+                </ul>
+            </nav>
 
-                <nav id="nav-content">
-                    <ul>
-                        <li class="navlink active-link">
-                            <img src="imagens/Home-icon.svg" alt="">
-                            Home
-                        </li>
-                        <li class="navlink">
-                            <img src="imagens/Money-Bag-icon.svg" alt="">
-                            Extrato
-                        </li>
-                        <li class="navlink">
-                            <img src="imagens/Split-Money-icon.svg" alt="">
-                            Meus Gastos
-                        </li>
-                        <li class="navlink" style="font-size: 1.4rem;">
-                            <img src="imagens/compass-icon.svg" alt="">
-                            Produtos e Unidades
-                        </li>
-                    </ul>
-                </nav>
+        </sidebar>
+        <div id="div-content-main">
 
-            </sidebar>
-
-            <div class="col-9" id="right-content">
+            <div id="right-content">
                 <header id="header-main">
 
                     <div class="search-container">
@@ -51,6 +58,28 @@
                     <img src="imagens/Alarm-icon.svg" style="max-width: 28px;" alt="">
                     <img src="imagens/Person-icon.svg" alt="">
                 </header>
+
+                <div id="content-right">
+
+                    <div id="grid-right-content">
+                        <div class="card-cinza">
+    
+                        </div>
+                        <div class="card-cinza">
+    
+                        </div>
+                        <div class="melhores-produtos">
+    
+                        </div>
+                        <div class="grafico">
+    
+                        </div>
+                        <div class="unidades">
+    
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
 

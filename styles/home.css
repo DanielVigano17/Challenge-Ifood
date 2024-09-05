@@ -10,6 +10,8 @@
 {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 100%;
     align-items: center;
     background-color: var(--primary-red);
     box-shadow: 14px 4px 23.9px 0px rgba(0, 0, 0, 0.25);
@@ -32,7 +34,7 @@
     display: flex;
     align-items: center;
     color: var(--secundary-red);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     max-width: 90%;
     height: 52px;
@@ -60,7 +62,43 @@
 
 #right-content
 {
-    padding-inline: 32px !important;
+    padding-right: 32px !important;
+    margin-left: 365px !important;
+}
+
+#grid-right-content
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    grid-template-rows: 1fr 1fr; /* Linhas automáticas */
+    gap: 20px;
+}
+
+.melhores-produtos
+{
+    grid-column: span 2;
+    border-radius: 24px;
+    border: 3px solid #E9E9E9;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.unidades
+{
+    grid-column: span 2;
+    border-radius: 24px;
+    border: 3px solid #E9E9E9;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.grafico
+{
+    grid-column: span 2;
+    border-radius: 24px;
+    border: 3px solid #E9E9E9;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
 }
 
 #header-main
@@ -104,4 +142,19 @@
 .search-input:focus {
     border-color: #0078D7; /* cor da borda ao focar no input */
 }
+
+.card-cinza
+{
+    height: 270px;
+    border-radius: 24px;
+    background: linear-gradient(92deg, #F3F3F3 1.36%, #E9E9E9 99.87%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.group-card-element
+{
+    padding-inline: 10px !important;
+    margin-bottom: 20px !important;
+}
+
 
