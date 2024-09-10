@@ -13,3 +13,54 @@
     text-decoration: none;
     list-style: none;
 }
+
+.item-list-card
+{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    background: linear-gradient(92deg, #F3F3F3 1.36%, #E9E9E9 99.87%);
+    padding: 8px 16px !important;
+    margin-top: 16px !important;
+}
+
+.item-list-card button
+{   
+    border-radius: 8px;
+    background: #8BFF78;
+    color: #18A900;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 8px !important;
+    border: none;
+    max-height: 30px;
+}
+
+.title-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-card h4{
+    color: #726E6E;
+    font-size: 18px;
+    font-weight: 700 !important;
+}
+
+.title-card span{
+    color: #726E6E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* .content-card{
+
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */

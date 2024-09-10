@@ -167,6 +167,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 12px !important;
 }
 
 .header-card p 
@@ -188,6 +189,17 @@
 #melhores-produtos
 {
     height: 40%;
+}
+
+#grafico{
+    display: flex;
+    align-items: center;
+    padding-inline: 38px !important;
+}
+
+#grafico img{
+
+    max-width: 100%;
 }
 
 #unidades-marca
