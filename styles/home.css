@@ -24,7 +24,22 @@
 {
     max-width: 7.5rem;
 }
+.left-header-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.btn_menu
+{
+    border: none;
+    background-color: transparent;
+    padding: 4px !important;
+    cursor: pointer;
+    display: none;
+}
 #nav-content
 {
     max-width: 100%;
@@ -189,6 +204,7 @@
 #melhores-produtos
 {
     height: 40%;
+    padding-bottom: 24px !important;
 }
 
 #grafico{
@@ -205,6 +221,61 @@
 #unidades-marca
 {
     height: 60%;
+    padding-bottom: 24px !important;
+}
+
+
+@media (max-width: 1200px) {
+
+    #content-right{
+        display: flex;
+        flex-direction: column;
+    }
+    #grid-right-content{
+        width: 100%;
+        padding-right: 0 !important;
+        
+    }
+
+    #grid-left-content{
+        width: 100%;
+        margin-top: 28px !important;
+    }
+}
+
+@media (max-width: 950px) {
+
+    #sidebar{
+        display: none;
+    }
+    #right-content{
+        margin-left: 0 !important;
+        padding-inline: 32px !important;
+    }
+
+    .btn_menu
+    {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    .search-container{
+        
+        display: none;
+    }
+    
+}
+
+@media (max-width: 460px) {
+
+    #grid-right-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 
