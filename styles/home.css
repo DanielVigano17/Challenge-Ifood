@@ -7,73 +7,10 @@
     min-height: 100vh;
 
 }
-#sidebar
-{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    align-items: center;
-    background-color: var(--primary-red);
-    box-shadow: 14px 4px 23.9px 0px rgba(0, 0, 0, 0.25);
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    max-width: 360px !important;
-}
+
 #logo-img
 {
     max-width: 7.5rem;
-}
-.left-header-content
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.btn_menu
-{
-    border: none;
-    background-color: transparent;
-    padding: 4px !important;
-    cursor: pointer;
-    display: none;
-}
-#nav-content
-{
-    max-width: 100%;
-    width: 100%;
-}
-.navlink
-{
-    display: flex;
-    align-items: center;
-    color: var(--secundary-red);
-    font-size: 1.2rem;
-    font-weight: 700;
-    max-width: 90%;
-    height: 52px;
-    padding-left: 40px !important;
-    border-radius: 6px;
-    margin-top: 24px !important;
-    cursor: pointer;
-}
-
-.navlink:hover 
-{
-    background-color: var(--terciary-red);
-}
-
-.navlink img
-{
-    margin-right: 20px !important;
-}
-
-.active-link
-{
-    background-color: var(--terciary-red);
-    border-right: 5px solid var(--secundary-red);
 }
 
 #right-content
@@ -117,48 +54,6 @@
     border: 3px solid #E9E9E9;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-#header-main
-{
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 40px;
-}
-
-.search-container {
-    position: relative;
-    display: inline-block;
-}
-
-.search-icon {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    color: red;
-    font-size: 16px;
-}
-.search-icon img
-{
-    max-width: 30px;
-}
-
-.search-input {
-    padding: 10px 10px 10px 65px !important; /* padding para o espaço do ícone */
-    background-color: var(--primary-red); /* cor de fundo */
-    border-radius: 12px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    width: 400px;
-    height: 52px;
-}
-
-.search-input:focus {
-    border-color: #0078D7; /* cor da borda ao focar no input */
 }
 
 .card-cinza
@@ -245,28 +140,10 @@
 
 @media (max-width: 950px) {
 
-    #sidebar{
-        display: none;
-    }
     #right-content{
         margin-left: 0 !important;
         padding-inline: 32px !important;
     }
-
-    .btn_menu
-    {
-        display: block;
-    }
-    
-}
-
-@media (max-width: 700px) {
-
-    .search-container{
-        
-        display: none;
-    }
-    
 }
 
 @media (max-width: 460px) {
