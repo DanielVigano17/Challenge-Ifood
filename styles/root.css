@@ -14,6 +14,14 @@
     list-style: none;
 }
 
+button{
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer
+    ;
+}
+
 .item-list-card
 {   
     display: flex;
@@ -27,7 +35,7 @@
     margin-top: 16px !important;
 }
 
-.item-list-card button
+.green-btn
 {   
     border-radius: 8px;
     background: #8BFF78;
@@ -38,6 +46,18 @@
     border: none;
     max-height: 30px;
 }
+
+.red-btn
+{   
+    border-radius: 8px;
+    background: var(--primary-red);
+    color: #18A900;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 8px !important;
+    border: none;
+    max-height: 30px;
+}   
 
 .title-card{
     display: flex;
