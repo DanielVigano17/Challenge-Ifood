@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background-image: url(imagens/background.png);
+    background-image: url(../imagens/background.png);
     background-size: cover;
 }
 
@@ -199,7 +199,7 @@ input{
 
 @media (max-width: 900px){
     body{
-        background-image: url(imagens/BackGroundTablet1.png);
+        background-image: url(../imagens/BackGroundTablet1.png);
     }
 }
 
@@ -224,7 +224,7 @@ input{
 
 @media (max-width: 630px){
     body{
-        background-image: url(imagens/BackGroundMobile1.png);
+        background-image: url(../imagens/BackGroundMobile1.png);
     }
 
     .menu > button{
