@@ -1,65 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css">
-
-    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/root.css">
+        <link rel="stylesheet" href="styles/home.css">
+    <title>Home</title>
 </head>
-
 <body>
-    <header>
-        <div class="menu">
-            <img src="imagens/ifode-logo.png" alt="logo ifood">
-            <a href="#">Sobre Ifood</a>
-            <a href="#">Como funciona</a>
-            <a href="#">Ajuda</a>
-            <button>Login</button>
-        </div>
-    </header>
-    <main>
-        <div class="login card p-5 shadow-lg mx-auto">
-            <h1 class="text-center">Cadastre sua conta de parceiro <strong>Ifood!</strong></h1>
+    <main class="conteiner-fluid" id="main-content">
+        <sidebar id="sidebar">
+            <img src="imagens/logo_Ifood.svg" id="logo-img" alt="">
 
-            <div class="inputs mb-4">
-                <p>Nome completo</p>
-                <input type="text" class="form-control" placeholder="Seu nome completo">
+            <nav id="nav-content">
+                <ul>
+                    <a href="index.html" class="navlink active-link">
+                        <img src="imagens/Home-icon.svg" alt="">
+                        Home
+                    </a>
+                    <a href="extrato.html" class="navlink">
+                        <img src="imagens/Money-Bag-icon.svg" alt="">
+                        Extrato
+                    </a>
+                    <a  href="" class="navlink">
+                        <img src="imagens/Split-Money-icon.svg" alt="">
+                        Meus Gastos
+                    </a>
+                    <a href="produtos-unidades.html" class="navlink" >
+                        <img src="imagens/compass-icon.svg" alt="">
+                        Produtos e Unidades
+                    </a>
+                    <a href="grupos-seguranca.html" class="navlink" >
+                        <img src="imagens/Cadeado-icon.svg" alt="">
+                        Grupos e Segurança
+                    </a>
+                    <a href="dashboard-financeiro.html" class="navlink">
+                        <img src="imagens/Grafico-icon.svg" alt="">
+                        Dashboard Financeiro
+                    </a>
+                </ul>
+            </nav>
+
+        </sidebar>
+        <div id="div-content-main">
+
+            <div id="right-content">
+                <header id="header-main">
+
+                    <div class="left-header-content">
+                        <button class="btn_menu">
+                            <img src="imagens/Menu-burguer-icon.svg" alt="">
+                        </button>
+    
+                        <div class="search-container">
+                            <span class="search-icon"><img src="imagens/Search-icon.svg" alt=""></span>
+                            <input type="text" class="search-input" placeholder="">
+                        </div>
+                    </div>
+
+                    <img src="imagens/Alarm-icon.svg" style="max-width: 28px;" alt="">
+                    <img src="imagens/Person-icon.svg" alt="">
+                </header>
+
+                <div id="content-right">
+
+                    <div id="grid-right-content">
+                        <div class="card-cinza vendas-realizadas">
+                            <div class="header-card">
+                                <img src="imagens/Cash-icon.svg" alt="">
+                                <p>Vendas Realizadas</p>
+                            </div>
+
+                            <span class="value-card">250</span>
+                        </div>
+                        <div class="card-cinza">
+                            <div class="header-card">
+                                <img src="imagens/Time-icon.png" alt="">
+                                <p>Pedidos Pendentes</p>
+                            </div>
+
+                            <span class="value-card">4</span>
+                        </div>
+                        <div class="outline-card" id="grafico">
+                            
+                            <img src="imagens/Grafico-img.svg" alt="">
+    
+                        </div>
+                    </div>
+
+                    <div id="grid-left-content">
+
+                        <div class="outline-card" id="melhores-produtos">
+                            <div class="header-card">
+                                <img src="imagens/Cash-icon.svg" alt="">
+                                <p>Melhores Produtos</p>
+                            </div>
+
+                            <div>
+                                <div class="item-list-card">
+
+                                    <div class="title-card">
+                                        <h4>Lanche de Frango</h4>
+                                        <span>x86</span>
+                                    </div>
+
+                                    <button class="green-btn">Visualizar</button>
+
+                                </div>
+
+                                <div class="item-list-card">
+
+                                    <div class="title-card">
+                                        <h4>Lanche de Frango</h4>
+                                        <span>x86</span>
+                                    </div>
+
+                                    <button class="green-btn">Visualizar</button>
+
+                                </div>
+
+                                <div class="item-list-card">
+
+                                    <div class="title-card">
+                                        <h4>Lanche de Frango</h4>
+                                        <span>x86</span>
+                                    </div>
+
+                                    <button class="green-btn">Visualizar</button>
+
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="outline-card" id="unidades-marca">
+                            <div class="header-card">
+                                <img src="imagens/Manufacturing-icon.svg" alt="">
+                                <p>Unidades da Marca</p>
+                            </div>
+
+                            <div class="content-card">
+                                <div class="item-list-card">
+
+                                    <div class="title-card">
+                                        <h4>Lanche de Frango</h4>
+                                        <span>x86</span>
+                                    </div>
+
+                                    <button class="green-btn">Visualizar</button>
+
+                                </div>
+
+                                <div class="item-list-card">
+
+                                    <div class="title-card">
+                                        <h4>Lanche de Frango</h4>
+                                        <span>x86</span>
+                                    </div>
+
+                                    <button class="green-btn">Visualizar</button>
+
+                                </div>
+
+                                <div class="item-list-card">
+
+                                    <div class="title-card">
+                                        <h4>Lanche de Frango</h4>
+                                        <span>x86</span>
+                                    </div>
+
+                                    <button class="green-btn">Visualizar</button>
+
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="inputs mb-4">
-                <p>E-mail</p>
-                <input type="email" class="form-control" placeholder="Seu e-mail">
-            </div>
-
-            <div class="inputs mb-4">
-                <p>Celular (com DDD)</p>
-                <input type="text" class="form-control" placeholder="(00) 00000-0000">
-            </div>
-
-            <div class="cadastro text-center">
-                <button class="btn btn-danger btn-cadastrar">Cadastrar</button>
-
-                <p class="txt-ou my-3">OU</p>
-
-                <a href="#" class="btn btn-primary btn-facebook">Login com Facebook</a>
-            </div>
-
-            <p class="txt-footer mt-4">
-                Ao continuar, você concorda em receber comunicações do iFood. Confira nossa
-                <a href="#">Declarações de Privacidade.</a>
-            </p>
         </div>
     </main>
+    
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+</script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    <script src="main.js"></script>
 </body>
-
 </html>
